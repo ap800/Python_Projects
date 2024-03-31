@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FreeCodeCamp Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Survey.css">
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form action="https://register-demo.freecodecamp.org"method="POST" id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name<input type="text" id="name" required name="Name" placeholder="Please enter your name"></label>
+                <label for="email" id="email-label">Email<input type="email" id="email" required name="Email" placeholder="Please enter your email"></label>
+                <label for="number" id="number-label">Age<input type="number" min="18" max="100" id="number" required name="Number" placeholder="Age"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you recommend FreeCodeCamp to others?</legend>
+                <label for="definitely"><input type="radio" id="definitely" checked name="answer" value="definitely"> Definitely</label>
+                <label for="maybe"><input type="radio" id="maybe" name="answer" value="maybe"> Maybe</label>
+                <label for="never"><input type="radio" id="never" name="answer" value="never"> Never</label>
+            </fieldset>
+            <fieldset>
+                <h2>What is your favorite feature of freeCodeCamp?</h2>
+                <select id="dropdown">
+                    <option value="">(Select an option)</option>
+                    <option value="1">Community</option>
+                    <option value="2">Courses</option>
+                    <option value="3">Videos and Solutions</option>
+                    <option value="4">Projects</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <h2>What would you like to see improved? (Check all that apply)</h2>
+                <label for="front-end"><input type="checkbox" id="front-end" value="Front End"> Front-End Projects</label>
+                <label for="back-end"><input type="checkbox" id="back-end" value="Back End"> Back-End Projects</label>
+                <label for="videos"><input type="checkbox" id="videos" value="Videos"> Videos</label>
+                <label for="forum"><input type="checkbox" id="forum" value="Forum"> Forums</label>
+                <label for="any-other"><input type="checkbox" id="any-other" value="Any Other"> Any Other</label>
+                <h3>Any comments or suggestions?</h3>
+                <label for="comments-and-suggestions"><textarea name="Comments and Suggestions" id="comments-and-suggestions" cols="30" rows="10" placeholder="Enter your comments here..."></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>

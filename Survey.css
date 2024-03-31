@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(istockphoto-1398473177-612x612.jpg);
+}
+
+#title, #description {
+    text-align: center;
+    color: #333;
+}
+
+#title {
+    margin-top: 50px;
+    color: orangered;
+}
+
+#survey-form {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+p {
+    font-style: italic;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+    #survey-form {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea,
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
